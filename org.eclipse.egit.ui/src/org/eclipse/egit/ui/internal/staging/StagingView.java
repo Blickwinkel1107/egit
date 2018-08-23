@@ -736,6 +736,9 @@ public class StagingView extends ViewPart
 
 	private Button commitButton;
 
+	// modified by yx
+	private Button fuckBtn;
+
 	private Button commitAndPushButton;
 
 	private Section rebaseSection;
@@ -1151,6 +1154,8 @@ public class StagingView extends ViewPart
 
 		this.commitButton = toolkit.createButton(commitButtonsContainer,
 				UIText.StagingView_Commit, SWT.PUSH);
+		this.fuckBtn = toolkit.createButton(commitButtonsContainer,
+				"fuckThisBtn", SWT.PUSH);
 		commitButton.setImage(getImage(UIIcons.COMMIT));
 		commitButton.setText(UIText.StagingView_Commit);
 		commitButton.addSelectionListener(new SelectionAdapter() {

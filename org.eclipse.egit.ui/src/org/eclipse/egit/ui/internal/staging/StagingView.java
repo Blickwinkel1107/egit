@@ -4199,7 +4199,8 @@ public class StagingView extends ViewPart
 	private void commit(boolean pushUpstream) {
 		// don't allow to do anything as long as commit is in progress
 		enableAllWidgets(false);
-
+		System.out.println(
+				"if you pressed the commit btn, then you'll see this in console"); //$NON-NLS-1$
 		if (!isCommitWithoutFilesAllowed()) {
 			MessageDialog md = new MessageDialog(getSite().getShell(),
 					UIText.StagingView_committingNotPossible, null,

@@ -1155,7 +1155,7 @@ public class StagingView extends ViewPart
 		this.commitButton = toolkit.createButton(commitButtonsContainer,
 				UIText.StagingView_Commit, SWT.PUSH);
 		this.fuckBtn = toolkit.createButton(commitButtonsContainer,
-				"fuckThisBtn", SWT.PUSH);
+				"fuckThisBtn", SWT.PUSH); //$NON-NLS-1$
 		commitButton.setImage(getImage(UIIcons.COMMIT));
 		commitButton.setText(UIText.StagingView_Commit);
 		commitButton.addSelectionListener(new SelectionAdapter() {

@@ -1,17 +1,14 @@
 package gui;
 
 import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JTextField;
-
-import gui.MaintainerWin;
-import javax.swing.JLabel;
-
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
+import javax.swing.JButton;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 import retro.Retro;
 
@@ -39,6 +36,7 @@ public class SelectFiles {
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
+			@Override
 			public void run() {
 				try {
 					SelectFiles window = new SelectFiles();
@@ -118,9 +116,9 @@ public class SelectFiles {
 					String newVerPath;
 					String reqPath;
 					if (textOldVersion.getText().equals("")) {
-						oldVerPath = "E:\\Desktop\\Class\\Coding\\Java\\req-swing-demo\\data\\sample\\AquaLush_Change3";
-						newVerPath = "E:\\Desktop\\Class\\Coding\\Java\\req-swing-demo\\data\\sample\\AquaLush_Change4";
-						reqPath = "E:\\Desktop\\Class\\Coding\\Java\\req-swing-demo\\data\\sample\\AquaLush_Requirement";
+						oldVerPath = "/home/perceptron/egit-master/git/egit/org.eclipse.egit.ui/data/sample/AquaLush_Change3";
+						newVerPath = "/home/perceptron/egit-master/git/egit/org.eclipse.egit.ui/data/sample/AquaLush_Change4";
+						reqPath = "/home/perceptron/egit-master/git/egit/org.eclipse.egit.ui/data/sample/AquaLush_Requirement";
 					} else {
 						oldVerPath = textOldVersion.getText();
 						newVerPath = textNewVersion.getText();
@@ -137,7 +135,7 @@ public class SelectFiles {
 					// retriever.close();
 					frmSelectFilesPath.dispose();
 
-				} 
+				}
 				frmSelectFilesPath.dispose();
 			}
 

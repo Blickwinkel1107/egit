@@ -127,5 +127,6 @@ public class Login {
 		});
 		btnExit.setBounds(155, 180, 117, 29);
 		frmLogIn.getContentPane().add(btnExit);
+		frmLogIn.setVisible(true);
 	}
 }

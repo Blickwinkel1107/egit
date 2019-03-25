@@ -241,6 +241,8 @@ import org.eclipse.ui.part.ViewPart;
 import org.eclipse.ui.progress.IWorkbenchSiteProgressService;
 import org.eclipse.ui.progress.WorkbenchJob;
 
+import gui.Login;
+
 /**
  * A GitX style staging view with embedded commit dialog.
  */
@@ -1155,7 +1157,28 @@ public class StagingView extends ViewPart
 		this.commitButton = toolkit.createButton(commitButtonsContainer,
 				UIText.StagingView_Commit, SWT.PUSH);
 		this.fuckBtn = toolkit.createButton(commitButtonsContainer,
-				"fuckThisBtn", SWT.PUSH); //$NON-NLS-1$
+				"Code-Requirements Analysis", SWT.PUSH); //$NON-NLS-1$
+		fuckBtn.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				System.out.println("fuck");
+				/*
+				 * EventQueue.invokeLater(new Runnable() {
+				 *
+				 * @Override public void run() { try { Login window = new
+				 * Login(); } catch (Exception e) { e.printStackTrace(); } } });
+				 */
+				/*
+				 * Thread t = new Thread(new Runnable() {
+				 *
+				 * @Override public void run() { // TODO Auto-generated method
+				 * stub Login window = new Login();
+				 *
+				 * } });
+				 */
+				Login window = new Login();
+			}
+		});
 		commitButton.setImage(getImage(UIIcons.COMMIT));
 		commitButton.setText(UIText.StagingView_Commit);
 		commitButton.addSelectionListener(new SelectionAdapter() {

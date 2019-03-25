@@ -102,7 +102,8 @@ public class SelectFiles_Manager {
 					String reqPath;
 					if (textField.getText().equals("")) {
 						//reqPath = "/Users/mac/Desktop/interfaceDemo/data/sample/AquaLush_Requirement";
-						reqPath = "E:\\Desktop\\Class\\Coding\\Java\\req-swing-demo\\data\\sample\\AquaLush_Requirement";
+						reqPath = "/home/perceptron/egit-master/git/egit/org.eclipse.egit.ui/data/sample/AquaLush_Requirement";
+						//reqPath = "E:\\Desktop\\Class\\Coding\\Java\\req-swing-demo\\data\\sample\\AquaLush_Requirement";
 					} else {
 						reqPath = textField.getText();
 					}
